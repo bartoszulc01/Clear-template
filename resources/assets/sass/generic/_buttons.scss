@@ -1,0 +1,37 @@
+.btn {
+  @include media-breakpoint-down(sm) {
+    &.btn-mobile {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &.btn-primary {
+    background: #da923e;
+    border: none;
+    transition: all 200ms linear;
+    padding: 15px 25px;
+    min-width: 200px;
+    border-radius: 0;
+    font-family: $primaryFont;
+    font-weight: 500;
+
+    @include fontSize(16);
+    @include lineHeight(24);
+  }
+
+  &.btn-secondary {
+    border: none;
+    background: linear-gradient(90deg, #003360 0%, #3975aa 100%);
+    transition: all 200ms linear;
+    padding: 15px 25px;
+    min-width: 200px;
+    border-radius: 0;
+    font-family: $primaryFont;
+    font-weight: 500;
+
+    @include fontSize(16);
+    @include lineHeight(24);
+  }
+}

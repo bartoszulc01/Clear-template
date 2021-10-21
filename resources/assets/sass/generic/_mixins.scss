@@ -1,0 +1,34 @@
+@mixin fontSize($size) {
+  $root: 16;
+
+  font-size: $size/$root + rem;
+}
+
+@mixin lineHeight($size) {
+  $root: 16;
+
+  line-height: $size/$root + rem;
+}
+
+@mixin p-style {
+  font-family: $secondaryFont;
+  font-weight: 400;
+  color: #444;
+
+  @include fontSize(18);
+  @include lineHeight(28);
+
+  @include media-breakpoint-down(sm) {
+    @include fontSize(16);
+    @include lineHeight(26);
+  }
+}
+
+@mixin h4 {
+  .h4 {
+    font-family: $primaryFont;
+
+    @include fontSize(24);
+    @include lineHeight(30);
+  }
+}

@@ -1,0 +1,75 @@
+/**
+ * Checkator jQuery Plugin
+ * A plugin for radio and checkbox elements
+ * version 1.1, Dec 20th, 2013
+ * by Ingi á Steinamørk
+ */
+
+/* RESET */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-bottom: 0;
+}
+
+/* SOURCE ELEMENT (when checkator is enabled on an element) */
+.checkator_source {
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+/* SHARED SETTING */
+.checkator_holder { /* Holder for the new element */
+  display: inline-block;
+  position: relative;
+}
+
+.checkator_element { /* New element */
+  background: #fff;
+  border: 3.5px solid #163c58;
+  border-radius: 6px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+input[type="checkbox"]:checked + .checkator_element {
+  box-sizing: border-box;
+}
+
+.checkator_source:checked + .checkator_element::after { /* Checked element dot */
+  display: block;
+  content: "";
+  background: url("../images/icons/checked.svg");
+  background-size: 30px 30px;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.checkator_source:hover + .checkator_element { /* Hovered element */
+
+  /* Bug: There is a bug in chrome preventing this from working correctly */
+  box-sizing: border-box;
+}
+
+/* RADIO SETTINGS */
+.checkator_element.radio {
+  border-radius: 50% !important;
+}
+
+.checkator_element.radio::after {
+  border-radius: 50% !important;
+}
+
+/* CHECKBOX SETTINGS */
+.checkator_element.checkbox { /* New element */
+  box-sizing: border-box;
+}

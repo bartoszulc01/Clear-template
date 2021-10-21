@@ -1,0 +1,305 @@
+{
+    "key": "group_6160280240684",
+    "title": "Cennik",
+    "fields": [
+        {
+            "key": "field_6160280f5cf08",
+            "label": "Sekcja_1",
+            "name": "sekcja_1",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_616028215cf09",
+                    "label": "text_1",
+                    "name": "text_1",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_616028265cf0a",
+                    "label": "text_2",
+                    "name": "text_2",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_616028285cf0b",
+            "label": "Sekcja_2",
+            "name": "sekcja_2",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_616028285cf0c",
+                    "label": "text_1",
+                    "name": "text_1",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
+                },
+                {
+                    "key": "field_616028285cf0d",
+                    "label": "text_2",
+                    "name": "text_2",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
+                },
+                {
+                    "key": "field_6160282b5cf0e",
+                    "label": "text_3",
+                    "name": "text_3",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
+                },
+                {
+                    "key": "field_6160282c5cf0f",
+                    "label": "text_4",
+                    "name": "text_4",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "default_value": "",
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_6160283d5cf11",
+            "label": "Sekcja_3",
+            "name": "Sekcja_3",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_61602c14835cd",
+            "label": "dodaj element",
+            "name": "four-eight",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "table",
+            "button_label": "",
+            "sub_fields": [
+                {
+                    "key": "field_61602c1f835ce",
+                    "label": "text_1",
+                    "name": "text_1",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_61602c23835cf",
+                    "label": "text_2",
+                    "name": "text_2",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        },
+        {
+            "key": "field_61603566ab1c9",
+            "label": "Sekcja_4",
+            "name": "sekcja_4",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61603572ab1ca",
+                    "label": "text_1",
+                    "name": "text_1",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                },
+                {
+                    "key": "field_61603578ab1cb",
+                    "label": "text_2",
+                    "name": "text_2",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 1,
+                    "delay": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "15"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1633695099
+}

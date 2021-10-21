@@ -1,0 +1,99 @@
+.background-header {
+  height: 320px;
+  background-color: $primaryColor;
+
+  @media (max-width: 767px) {
+    height: auto;
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      width: 100% !important;
+      max-width: 100%;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .col-sm-12 {
+    position: relative;
+    z-index: 10;
+  }
+
+  .col-12 {
+    @media (min-width: 768px) {
+      position: static;
+      height: 320px;
+
+      img {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 320px;
+        object-fit: cover;
+        position: absolute !important;
+      }
+    }
+
+    @media (max-width: 767px) {
+      position: absolute;
+      height: auto;
+      width: 100%;
+
+      img {
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+        height: auto;
+        position: absolute !important;
+        object-fit: cover;
+        object-position: 0% 0%;
+      }
+    }
+  }
+}
+
+.home {
+  .background-header {
+    height: 920px;
+
+    p {
+      color: $white;
+      font-family: $primaryFont;
+      text-shadow: 0 6px 8px rgba(0, 51, 97, 0.3);
+
+      @include fontSize(30);
+      @include lineHeight(35);
+    }
+
+    .col-12 {
+      @media (min-width: 768px) {
+        height: 920px;
+
+        img {
+          height: 920px;
+        }
+      }
+    }
+  }
+}
+
+.under-h1 {
+  p {
+    font-family: $primaryFont;
+
+    @include fontSize(48);
+    @include lineHeight(73);
+
+    @include media-breakpoint-down(lg) {
+      @include fontSize(41);
+      @include lineHeight(50);
+    }
+
+    @include media-breakpoint-down(sm) {
+      @include fontSize(24);
+      @include lineHeight(32);
+    }
+  }
+}

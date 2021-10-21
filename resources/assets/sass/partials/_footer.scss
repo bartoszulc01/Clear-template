@@ -1,0 +1,31 @@
+.footer-wrap {
+}
+
+.footer-copy {
+  position: relative;
+  background: $primaryColor;
+  padding: 15px 0;
+
+  .container {
+    .row {
+      border-top: 1px solid #e5e5e5;
+    }
+  }
+
+  p {
+    color: $white !important;
+    margin-bottom: 0;
+
+    @include fontSize(18);
+    @include lineHeight(38);
+
+    @include media-breakpoint-down(sm) {
+      @include fontSize(16);
+      @include lineHeight(24);
+    }
+
+    span {
+      color: $primaryColor;
+    }
+  }
+}

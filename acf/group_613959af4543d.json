@@ -1,0 +1,50 @@
+{
+    "key": "group_613959af4543d",
+    "title": "background-header",
+    "fields": [
+        {
+            "key": "field_61395a25e1df6",
+            "label": "h1",
+            "name": "h1",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "!=",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1633673054
+}

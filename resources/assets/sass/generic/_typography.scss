@@ -1,0 +1,155 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  font-family: $primaryFont;
+  margin-bottom: 1rem;
+}
+
+h1,
+.h1,
+h1 span {
+  color: $white;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 6px 8px rgba(0, 51, 97, 0.3);
+
+  @include fontSize(60);
+  @include lineHeight(70);
+
+  @include media-breakpoint-down(lg) {
+    @include fontSize(41);
+    @include lineHeight(50);
+  }
+
+  @include media-breakpoint-down(sm) {
+    @include fontSize(32);
+    @include lineHeight(30);
+  }
+}
+
+h1 .white {
+  font-family: $secondaryFont;
+  font-weight: 300;
+  color: $white;
+}
+
+h2 .black {
+  font-family: $secondaryFont;
+  font-weight: 300;
+  color: $secondaryColor;
+}
+
+h2,
+.h2,
+h2 span {
+  font-family: $primaryFont;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  @include fontSize(40);
+  @include lineHeight(45);
+
+  @include media-breakpoint-down(lg) {
+    @include fontSize(41);
+    @include lineHeight(50);
+  }
+
+  @include media-breakpoint-down(sm) {
+    @include fontSize(24);
+    @include lineHeight(32);
+  }
+}
+
+h3,
+.h3,
+h3 span {
+  font-family: $primaryFont;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: $black;
+  text-transform: none;
+
+  @include fontSize(32);
+  @include lineHeight(38);
+
+  @include media-breakpoint-down(sm) {
+    @include fontSize(21);
+    @include lineHeight(31);
+  }
+}
+
+.black {
+  color: $black;
+}
+
+.pblack {
+  font-family: $primaryFont;
+}
+
+h4,
+.h4 {
+  @include fontSize(24);
+  @include lineHeight(30);
+}
+
+h5,
+.h5 {
+  font-weight: 400;
+
+  @include fontSize(14);
+  @include lineHeight(35);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+p,
+.p,
+ul,
+ol,
+li {
+  @include p-style;
+}
+
+time {
+  font-family: $primaryFont;
+  color: $black;
+
+  @include p-style;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.white {
+  color: $white;
+}
+
+
+.first-span {
+  color: $secondaryColor;
+}
+
+.second-span {
+  color: $blue;
+}
+
+.third-span {
+  color: $primaryColor;
+}

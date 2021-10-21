@@ -1,0 +1,206 @@
+
+.menu {
+  width: 100%;
+  z-index: 99;
+  position: relative;
+  padding: 20px 0;
+
+  @include media-breakpoint-down(sm) {
+    padding: 5px 0;
+  }
+
+  .navbar-brand {
+    left: 40px;
+  }
+
+  .brand-mobile {
+    @include media-breakpoint-down(md) {
+      img {
+        width: 49.6px;
+        height: 70px;
+      }
+    }
+  }
+
+  &-socials {
+    li {
+      padding: 0 15px;
+
+      img {
+        transition: all 200ms linear;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+
+#mega-menu-wrap-primary {
+  #mega-menu-primary {
+    @media (max-width: 992px) {
+      margin-top: 25px;
+    }
+
+    .mega-menu-item {
+      .mega-menu-link {
+        font-family: $primaryFont !important;
+        padding: 0 20px !important;
+        display: flex !important;
+        align-items: center !important;
+        position: relative !important;
+
+        @include media-breakpoint-down(md) {
+          justify-content: start;
+        }
+      }
+
+      .mega-sub-menu {
+        margin-top: 12px;
+        box-shadow: 0 6px 8px rgba(0, 51, 97, 0.3);
+
+        @include media-breakpoint-down(md) {
+          list-style: inside !important;
+        }
+
+        .mega-menu-item {
+          height: auto !important;
+          padding: 0;
+
+          
+
+          .mega-menu-link {
+            font-family: $primaryFont !important;
+            padding: 10px 20px !important;
+            height: auto !important;
+            display: flex !important;
+            align-items: center !important;
+            position: relative !important;
+
+            @include media-breakpoint-down(md) {
+            
+              padding: 0 20px !important;
+            }
+
+            @include media-breakpoint-up(lg) {
+              font-size: 16px !important;
+            }
+          }
+
+          &.mega-current-menu-item {
+            .mega-menu-link {
+              color: $primaryColor !important;
+            }
+          }
+        }
+      }
+
+      &.mega-has-icon {
+        .dashicons-facebook-alt {
+          text-align: center;
+
+          &:hover {
+            &::before {
+              transform: scale(1.1);
+            }
+          }
+
+          &::before {
+            content: "\f305";
+            font-size: 26px;
+            color: $primaryColor;
+            position: relative;
+            height: 41px;
+            width: 41px;
+            border: 2px solid $primaryColor;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 200ms linear;
+          }
+        }
+
+        .dashicons-instagram {
+          text-align: center;
+
+          &:hover {
+            &::before {
+              transform: scale(1.1);
+            }
+          }
+
+          &::before {
+            content: "\f12d";
+            color: $primaryColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 26px;
+            position: relative;
+            height: 41px;
+            width: 41px;
+            border: 2px solid $primaryColor;
+            border-radius: 100px;
+            transition: all 200ms linear;
+          }
+        }
+      }
+
+      &.mega-social-icon {
+        @include media-breakpoint-down(lg) {
+          width: auto; /* UPDATE THIS: 100 / Number of social icons */
+          float: left !important;
+          left: 50%;
+          transform: translateX(-100%);
+          clear: none;
+          text-align: center;
+        }
+
+        @include media-breakpoint-down(sm) {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      }// end sub menu
+    } // end li
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .menu-item.menu-item-gtranslate {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .gtranslate-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 1800px) and (min-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+
+    &-brand {
+      position: relative !important;
+      order: 1;
+      left: 0 !important;
+    }
+
+    .container.justify-content-xl-end {
+      width: 100%;
+      flex: 0 0 100%;
+      order: 3;
+      justify-content: center !important;
+    }
+
+    .socials-flags {
+      position: relative !important;
+      order: 2;
+      right: 0;
+    }
+  }
+}
